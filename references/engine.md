@@ -1,6 +1,6 @@
 # 内容配图引擎（共用方法论）
 
-> 这是 27 套配图风格的共用大脑。任何一套风格在执行时都先读这份引擎，
+> 这是 33 套配图风格的共用大脑。任何一套风格在执行时都先读这份引擎，
 > 再读自己 `references/styles/<slug>.md` 里的「长相」。
 >
 > **一句话哲学**：好配图不是给文章配气氛图，也不是把文章画成流程图，而是
@@ -206,4 +206,4 @@ node render.js --backend both --aspect 4:3 --out /tmp/illus \
 
 ## 附：风格库
 
-全部 27 套风格的速查表见 `SKILL.md`；每套的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 示例见 `references/styles/<slug>.md`，样张见 `examples/`。
+全部 33 套风格的速查表见 `SKILL.md`；每套的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 示例见 `references/styles/<slug>.md`，样张见 `examples/`。
