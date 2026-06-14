@@ -1,0 +1,5 @@
+_render-summary.json
+.DS_Store
+node_modules/
+*.log
+/tmp/
