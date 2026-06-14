@@ -4,7 +4,7 @@ name_en: Paper Cut / Papercraft
 channel: 品牌故事页 / 年报封面 / 节日营销 / 金融保险健康教育这类需要"放心"的题材
 has_text: false
 default_backend: nano   # 无文字 → Gemini Nano Banana Pro；若加中文标注则切 gpt-image-2
-default_ratio: 4:3
+default_ratio: "4:3"
 ---
 
 # 剪纸纸艺 · Paper Cut / Papercraft

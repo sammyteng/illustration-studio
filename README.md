@@ -1,10 +1,10 @@
 # Illustration Studio 🎨 · 内容配图工作室
 
-> **一个 Agent Skill：把文章变成配图。** 先读懂内容 → 挑出最该配图的「认知锚点」→ 从 **26 套插画风格**里选一套 → 产出可直接粘贴的生图提示词，有出图 key 时直接渲染 PNG。
+> **一个 Agent Skill：把文章变成配图。** 先读懂内容 → 挑出最该配图的「认知锚点」→ 从 **27 套插画风格**里选一套 → 产出可直接粘贴的生图提示词，有出图 key 时直接渲染 PNG。
 >
 > 适配 Claude Code / Codex / 任何能读 `SKILL.md` 的 Agent 运行时。
 
-中文 article illustration generator. Understands your article first, finds the key cognitive anchor, picks one of **26 illustration styles**, and emits ready-to-paste image-generation prompts (auto-renders PNG when an image key is available).
+中文 article illustration generator. Understands your article first, finds the key cognitive anchor, picks one of **27 illustration styles**, and emits ready-to-paste image-generation prompts (auto-renders PNG when an image key is available).
 
 ---
 
@@ -19,16 +19,16 @@
         → 写单图提示词 → 渲染（双后端）→ 双闸质检 → 交付
 ```
 
-风格只是「皮肤」，引擎是「大脑」——26 套风格共用同一套认知配图方法论。
+风格只是「皮肤」，引擎是「大脑」——27 套风格共用同一套认知配图方法论。
 
 ---
 
-## 26 套风格
+## 27 套风格
 
 | 类别 | 风格 |
 |---|---|
 | 手绘 / 编辑 | 白底手绘认知图 · 极简单线条编辑风 · 新传统水彩水粉 · 吉卜力治愈动漫 · 东方水墨国风 · 留白生活速写 · 单红点手绘速写 |
-| 几何 / 矢量 | 扁平 SaaS 科技风 · 包豪斯几何构成 · 友好品牌卡片流 |
+| 几何 / 矢量 | 扁平 SaaS 科技风 · 包豪斯几何构成 · 友好品牌卡片流 · 扁平品牌吉祥物 |
 | 3D / 立体 | 3D 融合扁平等距 · 黏土软 3D · 高端产品 hero |
 | 复古印刷 | Riso 孔版印刷 · 像素 8-bit 复古 · 复古未来太空图录 · Y2K 千禧赛博 · 粗线条复古平涂 |
 | 质感 / 拼贴 | 小红书暖系马克笔 · 混合媒介拼贴 · 剪纸纸艺 · 颗粒噪点渐变 · 数字剪贴簿 moodboard · 极简 lookbook 网格 |
@@ -38,7 +38,7 @@
 
 ## 样张 Gallery
 
-> 26 套风格各一张样张（由 `gpt-image-2` / Gemini Nano Banana Pro 生成，主题取自跨境电商 / AI 客服 / 内容创作场景，仅作风格演示）。所有风格遵守**留白铁律**（主体 ≤60%、大片呼吸空间）。
+> 27 套风格各一张样张（由 `gpt-image-2` / Gemini Nano Banana Pro 生成，主题取自跨境电商 / AI 客服 / 内容创作场景，仅作风格演示）。所有风格遵守**留白铁律**（主体 ≤60%、大片呼吸空间），**默认 4:3 比例 + 自动圆角阴影**（`--no-frame` 可关）。
 
 |  |  |  |  |
 |:--:|:--:|:--:|:--:|
@@ -48,7 +48,7 @@
 | <img src="examples/cosmic-retro-futurism.png" width="200"><br>**复古太空图录**<br><sub>`cosmic-retro-futurism`</sub> | <img src="examples/y2k-cyber-chrome.png" width="200"><br>**Y2K 千禧赛博**<br><sub>`y2k-cyber-chrome`</sub> | <img src="examples/ghibli-healing-anime.png" width="200"><br>**吉卜力治愈**<br><sub>`ghibli-healing-anime`</sub> | <img src="examples/bauhaus-geometric.png" width="200"><br>**包豪斯几何**<br><sub>`bauhaus-geometric`</sub> |
 | <img src="examples/oriental-ink-guofeng.png" width="200"><br>**东方水墨国风**<br><sub>`oriental-ink-guofeng`</sub> | <img src="examples/moodboard-scrapbook.png" width="200"><br>**数字剪贴簿**<br><sub>`moodboard-scrapbook`</sub> | <img src="examples/premium-product-hero.png" width="200"><br>**高端产品 hero**<br><sub>`premium-product-hero`</sub> | <img src="examples/bold-type-over-photo.png" width="200"><br>**大字压图广告**<br><sub>`bold-type-over-photo`</sub> |
 | <img src="examples/friendly-brand-cards.png" width="200"><br>**友好品牌卡片流**<br><sub>`friendly-brand-cards`</sub> | <img src="examples/bold-line-retro-flat.png" width="200"><br>**粗线条复古平涂**<br><sub>`bold-line-retro-flat`</sub> | <img src="examples/airy-lifestyle-linedraw.png" width="200"><br>**留白生活速写**<br><sub>`airy-lifestyle-linedraw`</sub> | <img src="examples/loose-red-accent-sketch.png" width="200"><br>**单红点手绘速写**<br><sub>`loose-red-accent-sketch`</sub> |
-| <img src="examples/minimal-lookbook-grid.png" width="200"><br>**极简 lookbook 网格**<br><sub>`minimal-lookbook-grid`</sub> | <img src="examples/mascot-quote-ad.png" width="200"><br>**萌宠金句广告**<br><sub>`mascot-quote-ad`</sub> |  |  |
+| <img src="examples/minimal-lookbook-grid.png" width="200"><br>**极简 lookbook 网格**<br><sub>`minimal-lookbook-grid`</sub> | <img src="examples/mascot-quote-ad.png" width="200"><br>**萌宠金句广告**<br><sub>`mascot-quote-ad`</sub> | <img src="examples/flat-brand-mascot.png" width="200"><br>**扁平品牌吉祥物**<br><sub>`flat-brand-mascot`</sub> |  |
 
 ---
 
@@ -76,8 +76,8 @@ export OPENAI_API_KEY=...     # gpt-image-2（用官方 OpenAI；若用自有兼
 export GEMINI_API_KEY=...     # Gemini Nano Banana
 
 # 3. 渲染一张
-node render.js --has-text true  --aspect 16:9 --out /tmp/out --prompt-file ./prompt.txt   # 有字 → gpt-image-2
-node render.js --has-text false --aspect 16:9 --out /tmp/out --prompt-file ./prompt.txt   # 无字 → Gemini
+node render.js --has-text true  --aspect 4:3 --out /tmp/out --prompt-file ./prompt.txt   # 有字 → gpt-image-2
+node render.js --has-text false --aspect 4:3 --out /tmp/out --prompt-file ./prompt.txt   # 无字 → Gemini
 ```
 
 > 注：`gpt-image-2` 是 OpenAI 兼容接口；自带 OpenAI 兼容路由的用户设 `OPENAI_BASE_URL` 即可。无 key 时本 skill 仍可只产出**可粘贴提示词**（贴到 ChatGPT / Gemini / 即梦 出图）。
@@ -102,7 +102,7 @@ illustration-studio/
 ├── render.js                 # 双后端可复用渲染器
 ├── references/
 │   ├── engine.md             # 认知配图引擎（通用方法论）
-│   └── styles/<slug>.md      # 26 套风格预设（DNA + 提示词模板 + 示例）
+│   └── styles/<slug>.md      # 27 套风格预设（DNA + 提示词模板 + 示例）
 └── examples/<slug>.png       # 每套风格样张
 ```
 

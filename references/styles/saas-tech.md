@@ -5,7 +5,7 @@ name_en: Flat SaaS / Tech
 channel: B2B 产品文 / 销售 deck / 官网 / 技术内容
 has_text: true
 default_backend: gpt
-default_ratio: "16:9"
+default_ratio: "4:3"
 one_liner: 浅冷灰扁平 + 品牌蓝 + 单一亮 accent，Linear/Stripe/ElevenLabs 那种 sober 工程感。
 ---
 

@@ -5,7 +5,7 @@ name_en: Loose Sketch + One Red Accent
 channel: 极简趣味海报 / 品牌 IP 小图 / 公众号点缀 / 框画 / 留白系封面
 has_text: true
 default_backend: gpt            # 有手写词 → gpt-image-2（手写体最稳）；若做纯画面无字版可切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 设计师速写本里的随手一画——松散未完成的石墨/墨线涂鸦，只画一个简单主体，全图唯一一抹红，配一个手写小词，近白底极致留白。
 ---
 
@@ -130,7 +130,7 @@ shading / 3D / gloss, dark or gradient or glowing background, an oversized title
 
 > 认知锚点：**跨境这件事，剥到最简单，就是「一个包裹，被寄出去」——别想复杂了，先把这一个动作做好。**
 > 隐喻：速写本上随手画的**一个快递纸箱**，箱口微开、胶带是那唯一一笔红涂鸦；箱子偏居画面右下，左上大片留白，角落题一个手写小词。
-> 唯一红落在「胶带」上 + 1 个手写小词。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 唯一红落在「胶带」上 + 1 个手写小词。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 A loose, casual designer-sketchbook drawing, 3:4 aspect ratio, on near-white

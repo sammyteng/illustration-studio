@@ -5,7 +5,7 @@ name_en: Friendly Brand Cards / Connected Flow
 channel: 产品功能介绍图 / "我们能帮你做X" 营销图 / 跨境客服能力清单(友好版) / 品牌落地页主视觉
 has_text: true
 default_backend: gpt            # 有字 → gpt-image-2（粗体标题+卡片标签+CTA 文字最稳）；纯展示无字时才切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 奶油底 + 粗体 type-led 大标题 + 一排圆角扁平小卡片，被一条细 accent 彩线串联，落到底部一个 accent 胶囊 CTA——干净、友好、有条理、文字主导的品牌营销图。
 ---
 
@@ -142,7 +142,7 @@ concept-word labels.
 
 > 认知锚点：**Shulex AI 客服不是一个孤立功能，而是一条从「帮顾客选对产品」到「拉高成交」的连贯能力流——四张卡片被一条线串起来，落到一个明确的行动召唤。**
 > 隐喻：一排宝丽来感的能力卡（放大镜选品 / 多语言对话气泡 / 工单清单 / 上扬转化箭头），被一条品红 accent 细线圆角串联，最后落到底部「立即体验」品红胶囊。
-> 4 张卡 + 1 大标题 + 1 CTA = 6 处中文标注（达上限）。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 4 张卡 + 1 大标题 + 1 CTA = 6 处中文标注（达上限）。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Friendly brand marketing illustration, 3:4 aspect ratio, on a clean solid cream /

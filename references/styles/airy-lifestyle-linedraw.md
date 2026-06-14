@@ -5,7 +5,7 @@ name_en: Airy Lifestyle Line Illustration
 channel: 公众号生活方式封面 / 小红书 / 品牌 charm 插画 / 内容头图
 has_text: true
 default_backend: gpt            # 有手写体标题 → gpt-image-2（中英文字最稳）；纯画面无字时可切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 干净肯定有魅力的手绘墨线勾生活小场景 + 柔和淡彩平铺，顶部大片柔和水彩天空留白 + 手写体显示标题，温暖松弛的 slice-of-life。
 ---
 
@@ -133,7 +133,7 @@ digital subtitle floating on top, jargon words.
 
 > 认知锚点（处境类）：**大促忙到飞起，也得给自己留十分钟——坐下来喝口咖啡、放空一下，这一小口松弛才撑得住下一波。** 看图的人应该说「这不就是我吗」。
 > 隐喻 / 场景：一个跨境打工人下班 / 大促间隙，独自坐在街边长椅上，手里捧一杯热咖啡，肩膀松下来，旁边或脚边一只猫 / 一个放下的工牌包；下半张是这个温暖小场景，**上半张一大片淡蓝水彩天空留白**，手写标题落在天上。一处砖红点睛在咖啡杯。
-> 手写标题 + 极小署名。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 手写标题 + 极小署名。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Airy slice-of-life line illustration, 3:4 aspect ratio, on a warm cream paper

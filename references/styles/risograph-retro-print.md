@@ -5,7 +5,7 @@ name_en: Risograph / Retro Print
 channel: 文创 / 文化 / 独立出版 / 内容创作者社群活动主视觉 / 态度海报 / 反 AI「要人味」内容
 has_text: true
 default_backend: gpt            # 有字 → gpt-image-2（中文标注最稳）；纯画面无字时可切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 模拟孔版油印的套色错位、半色调网点、有限荧光专色，带独立出版的粗粝手工味。
 ---
 
@@ -129,7 +129,7 @@ white-paper sketch.
 
 > 认知锚点：**知识不是攒出来的，是一层层「印」上去、压实、沉下来的——歪一点、糙一点没关系，那是人手做过的证据。**
 > 隐喻：一只手把一张张写满字的纸**一层层压进 / 印进**一个粗笨的沉淀容器（井 / 罐 / 层叠抽屉），层与层套色错位，最底层最实、最上层还在飞白。
-> 三专色（粉+蓝+一抹黄）+ 4 处印刷标注。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 三专色（粉+蓝+一抹黄）+ 4 处印刷标注。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Risograph / retro screen-printed poster, 3:4 aspect ratio, on warm off-white

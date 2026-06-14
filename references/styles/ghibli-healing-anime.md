@@ -5,7 +5,7 @@ name_en: Ghibli / Healing Anime
 channel: 小红书 / TikTok / 品牌 campaign / 产品故事 / 节日海报 / 公众号头图
 has_text: false
 default_backend: nano        # 无文字 → Gemini Nano Banana Pro（线条/质感更精细）；若需嵌中文标注则改 gpt-image-2
-default_ratio: "16:9"
+default_ratio: "4:3"
 ---
 
 # 吉卜力治愈动漫 · Ghibli / Healing Anime

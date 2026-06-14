@@ -5,7 +5,7 @@ name_en: Minimal Single-line Editorial
 channel: 深度长文 / 虎嗅·晚点风 / 思想类严肃选题
 has_text: false             # 几乎无字 → gemini 更精细；若加少量字可切 gpt
 default_backend: nano
-default_ratio: "16:9"
+default_ratio: "4:3"
 one_liner: 单一连续细线 + 最多一个点缀色，纽约客/杂志社论质感，高级克制零主角。
 ---
 

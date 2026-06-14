@@ -5,7 +5,7 @@ name_en: Claymorphism / Soft 3D
 channel: 吉祥物 / 功能拟人图标 / CTA 大图 / SaaS App 引导页 / 品牌人性化配图
 has_text: false
 default_backend: nano   # 无文字 → Gemini Nano Banana Pro（线条/质感更精细）；若加中文标注则切 gpt-image-2
-default_ratio: "1:1"
+default_ratio: "4:3"
 ---
 
 # 视觉 DNA · 黏土软3D（Claymorphism / Soft 3D）

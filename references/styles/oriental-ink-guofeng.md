@@ -5,7 +5,7 @@ name_en: Oriental Ink / Guofeng
 channel: 出海品牌主视觉 / 文化叙事长文 / 新中式品牌官网与 deck / 公众号封面 / 节气文化海报
 has_text: false
 default_backend: nano        # 无文字 → Gemini Nano Banana Pro（线条/晕染质感更精细）
-default_ratio: "3:4"
+default_ratio: "4:3"
 ---
 
 # 东方水墨国风 · Oriental Ink / Guofeng
@@ -111,7 +111,7 @@ no cyber neon, no busy diagram, no logos, no readable text in the default versio
 
 **主题**：中国品牌出海的文化身份叙事 / 跨境「东方智造」品牌主视觉。
 **认知锚点**（物理隐喻）：一艘满载货柜的远帆，被水墨化作传统江山长卷的一笔，从东方留白驶向世界——东方之根，扬帆出海。
-**has_text: false → 画面内不写字**，下面这条可直接喂给 `render.js`（`--backend nano --aspect 3:4`）。
+**has_text: false → 画面内不写字**，下面这条可直接喂给 `render.js`（`--backend nano --aspect 4:3`）。
 
 ```
 Traditional Chinese ink-wash painting (shuimo / xieyi guofeng), on aged rice-paper (xuan paper)

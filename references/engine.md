@@ -1,6 +1,6 @@
 # 内容配图引擎（共用方法论）
 
-> 这是 26 套配图风格的共用大脑。任何一套风格在执行时都先读这份引擎，
+> 这是 27 套配图风格的共用大脑。任何一套风格在执行时都先读这份引擎，
 > 再读自己 `references/styles/<slug>.md` 里的「长相」。
 >
 > **一句话哲学**：好配图不是给文章配气氛图，也不是把文章画成流程图，而是
@@ -127,9 +127,9 @@
 **最省事：调用本仓库自包含的渲染器** `render.js`（先 `npm install openai @google/genai`）：
 
 ```bash
-node render.js --backend both --aspect 16:9 --out /tmp/illus \
+node render.js --backend both --aspect 4:3 --out /tmp/illus \
   --prompt "<英文画面主体 + 中文标注词>"
-# --backend gpt|nano|both ; --aspect 16:9|3:4|1:1 ; --prompt-file <path> 亦可
+# --backend gpt|nano|both ; --aspect 4:3|3:4|1:1 ; --prompt-file <path> 亦可
 ```
 
 两个后端的凭证（render.js 已内置，手动调时照此）：
@@ -162,7 +162,7 @@ node render.js --backend both --aspect 16:9 --out /tmp/illus \
 - [ ] 用了**原创隐喻**，不是照抄参考案例（换主物件 / 换动作 / 换空间关系）。
 - [ ] 提示词包含该风格 DNA 的**全部必含项**（背景 / 线条或材质 / 配色语义 / 比例 / 留白）。
 - [ ] 中文短标注 **≤ 该风格上限**，每处短、能读、来自真实语境（不是"提升协作效率"这种概念词）。
-- [ ] 比例符合渠道（公众号/长文 16:9；小红书封面 3:4）。
+- [ ] 比例默认 **4:3**（除非用户特别指定其它比例）。
 - [ ] 事实锚定通过：没有用户未授权的真人/品牌/数字。
 - [ ] 画面**3 秒读懂**：如果必须靠文字解释隐喻才懂，不合格。
 
@@ -206,4 +206,4 @@ node render.js --backend both --aspect 16:9 --out /tmp/illus \
 
 ## 附：风格库
 
-全部 26 套风格的速查表见 `SKILL.md`；每套的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 示例见 `references/styles/<slug>.md`，样张见 `examples/`。
+全部 27 套风格的速查表见 `SKILL.md`；每套的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 示例见 `references/styles/<slug>.md`，样张见 `examples/`。

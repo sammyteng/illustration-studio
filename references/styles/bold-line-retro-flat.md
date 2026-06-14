@@ -5,7 +5,7 @@ name_en: Bold-line Retro Flat / Groovy
 channel: 公众号封面 / 潮流趣味插画 / 品牌 IP / 有态度的内容配图
 has_text: false              # 纯插画无字 → nano（Gemini，线条+质感更精细）；要加标题再切 gpt
 default_backend: nano
-default_ratio: "2:3"
+default_ratio: "4:3"
 one_liner: 粗均匀黑描边勾形 + 有限暖色平涂色块 + 70s groovy 落日条纹 + 丝网颗粒，deadpan 酷又慵懒。
 ---
 
@@ -130,7 +130,7 @@ misregistration, single-line editorial, white-paper hand sketch.
 
 > 认知锚点：**大促像一场仗，扛过来了——不嘶吼不庆功，就慵懒地戴着墨镜举一杯，deadpan 地酷一下，那种「老子撑住了」的态度。**
 > 隐喻：一只戴墨镜的酷猫瘫在椅子里，一爪举着饮料杯，背后一轮 groovy 落日横条纹；脚边一个倒着的小包裹箱暗示「单都发完了」。纯画面无字 → 走 `nano`（Gemini）。
-> 可直接喂 `render.js`（`--backend nano --aspect 2:3`）。
+> 可直接喂 `render.js`（`--backend nano --aspect 4:3`）。
 
 ```
 Bold-line retro flat groovy illustration, 2:3 aspect ratio. A vintage

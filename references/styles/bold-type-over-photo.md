@@ -5,7 +5,7 @@ name_en: Bold Type over Photo / Editorial Ad
 channel: 出海品牌 campaign 主视觉 / 海报 KV / 杂志封面感广告 / 公众号头图
 has_text: true
 default_backend: gpt            # 有超大粗体标题 → gpt-image-2（中英文大字最稳、几乎不乱码）
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 满版纪实大照片 + 超大粗体白字压图穿插主体，外包一圈品牌色粗边框，一角 logo 锁定块，编辑广告的张力。
 ---
 
@@ -145,7 +145,7 @@ illustration, single-line editorial.
 
 > 认知锚点：**把客服做到全球用户都满意，靠的不是口号，是每一次真实对话都被听懂——这是一个有温度、可信赖的出海品牌姿态。**
 > 隐喻 / 画面：一张满版纪实照——一位真实的多语言客服 / 用户在暖光环境里，面对亮着多国语言对话气泡的屏幕，神情专注而温暖；超大白字「让世界听懂你」压在画面上，部分字母被人物肩膀和屏幕前后穿插遮挡；外包一圈暖黄粗边框，右下角一个暖黄 logo 块写「Shulex」。
-> 1 句巨型主标 + 1 句小副标 + 角落品牌名 = 3 处文字。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 1 句巨型主标 + 1 句小副标 + 角落品牌名 = 3 处文字。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Editorial advertising key visual / magazine-cover-style poster, 3:4 aspect ratio.

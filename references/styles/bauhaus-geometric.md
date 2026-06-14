@@ -5,7 +5,7 @@ slug: bauhaus-geometric
 channel: B2B 课程/教育信息图 · 知识框架图解 · 方法论拆解 · 品牌 KV · 公众号长文配图
 has_text: false
 default_backend: nano   # 无字 → Gemini Nano Banana Pro；若按 477 规则给图加中文标注则改走 gpt-image-2
-default_ratio: "1:1"
+default_ratio: "4:3"
 ---
 
 # 包豪斯几何构成 / Bauhaus Geometric
@@ -111,7 +111,7 @@ Bauhaus geometric constructivist illustration of a three-stage B2B sales methodo
 
 ```bash
 node "$HOME/shared-skills/_illustration-engine/render.js" \
-  --backend gpt --aspect 1:1 --has-text true --out /tmp/illus-bauhaus \
+  --backend gpt --aspect 4:3 --has-text true --out /tmp/illus-bauhaus \
   --prompt "<把上面整条 prompt 粘进来>"
 ```
 

@@ -5,7 +5,7 @@ name_en: Premium Product Hero / DTC Ad
 channel: 跨境 3C 爆款产品发布 hero / 电商落地页主视觉 / DTC 广告 / 产品 KV
 has_text: true
 default_backend: gpt            # 有字 → gpt-image-2（居中 wordmark + slogan + CTA 文字最稳）；纯产品无字时可切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 极简高端 DTC 广告：单个英雄产品居中棚拍，浅灰柔渐影棚 + 身后弧形浮动情境屏，留白足、文字克制、向往感拉满。
 ---
 
@@ -142,7 +142,7 @@ text or multiple paragraphs.
 ## 示例提示词（主题：跨境 3C 爆款便携充电器产品发布 hero · slogan + CTA）
 
 > 认知锚点：**一块「电量焦虑的解药」——小到能随身、安静到没存在感、可靠到你不用再想它；用了它，桌面、背包、户外的每个场景都有底气。**
-> 隐喻 / 构图：哑光黑便携充电器居中棚拍，身后弧形排开 4 块淡淡的浮动情境屏（书桌充电 / 装进背包 / 户外插手机 / 三口同充），底部柔和倒影。3:4 竖版，顶部 wordmark + 中部粗体 slogan + 细副标 + 加粗 CTA，共 4 处中文文字。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 隐喻 / 构图：哑光黑便携充电器居中棚拍，身后弧形排开 4 块淡淡的浮动情境屏（书桌充电 / 装进背包 / 户外插手机 / 三口同充），底部柔和倒影。3:4 竖版，顶部 wordmark + 中部粗体 slogan + 细副标 + 加粗 CTA，共 4 处中文文字。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Premium minimalist DTC product hero advertisement, 3:4 aspect ratio, in a clean

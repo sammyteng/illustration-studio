@@ -5,7 +5,7 @@ name_en: Cyber-Y2K
 channel: 小红书封面 / 潮牌·美妆 campaign / Gen Z 内容创作者封面 / 抖音封面 / IG Story
 has_text: true
 default_backend: gpt          # 有字 → gpt-image-2（文字渲染最准）；纯画面才退 gemini nano banana
-default_ratio: "3:4"
+default_ratio: "4:3"
 ---
 
 # Y2K千禧赛博 · Cyber-Y2K

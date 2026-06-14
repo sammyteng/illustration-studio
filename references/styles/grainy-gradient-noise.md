@@ -5,7 +5,7 @@ name_en: Grainy Gradient / Noise Texture
 channel: SaaS 产品发布情绪头图 / 抽象主视觉 / 公众号封面 / 网站 hero 背景 / 报告章节扉页 / 播客封面
 has_text: false
 default_backend: nano   # 无字 → Gemini Nano Banana Pro（线条/质感更精细，颗粒成品感强）
-default_ratio: "16:9"
+default_ratio: "4:3"
 ---
 
 # 颗粒噪点渐变 · Grainy Gradient / Noise Texture
@@ -134,7 +134,7 @@ no busy multi-color clutter — keep strictly to the purple-orange-pink trio.
 **一行渲染命令**（无字 → 走 Gemini）：
 ```bash
 node "$HOME/shared-skills/_illustration-engine/render.js" \
-  --backend nano --aspect 16:9 --out /tmp/grainy \
+  --backend nano --aspect 4:3 --out /tmp/grainy \
   --prompt-file <把上面 prompt 存成 .txt 的路径>
 ```
 

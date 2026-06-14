@@ -5,7 +5,7 @@ name_en: Mascot Speech-bubble Ad
 channel: 跨境 DTC 趣味广告 / 社媒投放 / 品牌萌宠代言 / 客户证言 meme 广告
 has_text: true
 default_backend: gpt            # 有字（品牌头 + 气泡金句 + 页脚）→ gpt-image-2，文字最稳；纯画面才切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 纯色柔和底 + 一只真实萌宠干净抠放 + 大对话气泡装一句第一人称俏皮证言，顶 logo 底页脚，playful 但干净的 DTC 广告。
 ---
 
@@ -142,7 +142,7 @@ styles, concept jargon in the quote.
 
 > 认知锚点（处境法）：铲屎官以前被客服消息追着跑、半夜还在回工单，心情差→连带猫的伙食都不稳；上了 AI 客服后铲屎官轻松了、心情好了，**猫的罐头管够**——猫用第一人称替用户说出「我过得好不好，全看我铲屎官累不累」这个戳心又好笑的因果。
 > 隐喻主体：一只戴小墨镜、一脸淡定满足的橘猫，坐在一整片柔和天蓝里，旁边大气泡替它说话；顶 Shulex logo + tagline，底法律小字。**四周大片留白透气**。
-> 文字：品牌头 + 一句猫嘴替金句 + 页脚。走 `render.js`（`--backend gpt --aspect 3:4`）。
+> 文字：品牌头 + 一句猫嘴替金句 + 页脚。走 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 A clean playful DTC social ad, 3:4 aspect ratio, on a single soft solid sky blue

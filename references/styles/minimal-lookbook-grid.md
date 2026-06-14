@@ -5,7 +5,7 @@ name_en: Minimal Lookbook Grid
 channel: 跨境品牌选品 lookbook / 出海新品合集 / 极简产品目录情绪页 / 电商上新
 has_text: true
 default_backend: gpt            # 有字 → gpt-image-2（细线 header + 手写格文字最稳）；纯画面无字可切 gemini
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 奶油米白大底 + 极简粗体 header + 整齐对齐的宝丽来照片网格，editorial lookbook / contact-sheet 的克制选品感。
 ---
 
@@ -128,7 +128,7 @@ giant ad headline, price / slogan clutter.
 
 > 认知锚点：**这是一本「会挑货的品牌」的极简上新内页——不喊不堆，靠对齐的照片网格和大片留白，让人觉得「这家有审美、东西值得看」。**
 > 构图：上方 `NEW IN —— OUTDOOR` 极简 header；下方 2×3 网格 = 5 张低饱和户外 / 3C 产品宝丽来（水壶、折叠椅、充电配件、帐篷一角、便携灯）+ 1 格手写「minimal calm」；四周大片奶油留白，每张小图钉别住。
-> 一行 header + 1 手写格（共 ≤ 该风格文字上限）。可直接喂 `render.js`（`--backend gpt --aspect 3:4`）。
+> 一行 header + 1 手写格（共 ≤ 该风格文字上限）。可直接喂 `render.js`（`--backend gpt --aspect 4:3`）。
 
 ```
 Minimal lookbook / contact-sheet page, 3:4 aspect ratio, on a clean flat cream /

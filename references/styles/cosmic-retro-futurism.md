@@ -10,7 +10,7 @@
 | **channel（适合渠道）** | 科技产品发布页 / 出海主视觉 / 未来宣言页 / 深度科技长文头图 / 偏理性高端的 deck 封面 |
 | **has_text** | `false` |
 | **default_backend** | `nano`（Gemini Nano Banana Pro — 纯画面无文字，线条/质感更精细） |
-| **default_ratio** | `16:9` |
+| **default_ratio** | `4:3` |
 
 > 一句话：奶油纸白底压黑字加一抹钴蓝，SVG 天体轨道线与行星圆点，古籍天文图录质感。
 
@@ -163,4 +163,4 @@ cute / mascot, photographic realistic starfield, NASA photo collage, tech UI
 dashboard, infographic title blocks.
 ```
 
-> 渲染：`node "$HOME/shared-skills/_illustration-engine/render.js" --backend nano --aspect 16:9 --has-text false --out /tmp/illus --prompt "<上面整段>"`
+> 渲染：`node "$HOME/shared-skills/_illustration-engine/render.js" --backend nano --aspect 4:3 --has-text false --out /tmp/illus --prompt "<上面整段>"`

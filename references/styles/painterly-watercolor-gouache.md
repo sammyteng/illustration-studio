@@ -5,7 +5,7 @@ name_en: Neo-Traditional Painterly
 channel: 深度长文 / 编辑插画 / 高端品牌内容 / 情绪叙事（创作者·打工人处境）
 has_text: false
 default_backend: nano        # 无文字 → Gemini Nano Banana Pro（线条/质感更精细）；若加中文标注则切 gpt-image-2
-default_ratio: "3:2"
+default_ratio: "4:3"
 one_liner: 水彩、水粉、彩铅等传统媒介手绘后扫描，保留笔触和纸纹，绘画感浓、情绪温度高。
 ---
 
@@ -139,7 +139,7 @@ type-label headers, infographic blocks.
 主题：深度长文谈「内容创作者一个人扛起整条生产线，选题、素材、成稿、发布全压在一个人身上，时间被无限拉扯」——一个人困在堆成山的素材里、被一根根线往不同方向拽。
 锚点类型：**用户处境**（"这不就是我吗"）。`has_text:false`，0 标注，让画面说话。后端：Gemini Nano Banana Pro（纯画面）。
 
-> 下面这条可直接喂给 `render.js`（`--backend nano --aspect 3:2 --has-text false`）。
+> 下面这条可直接喂给 `render.js`（`--backend nano --aspect 4:3 --has-text false`）。
 
 ```
 A hand-painted traditional-media editorial illustration, scanned from real

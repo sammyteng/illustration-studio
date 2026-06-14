@@ -5,7 +5,7 @@ name_en: 3D Meets Flat / Hybrid Isometric
 channel: B2B 销售 deck 首屏 / 产品架构解释图 / 公众号头图 / 系统流程科普 / 官网 hero 配图
 has_text: true
 default_backend: gpt          # 有文字 → gpt-image-2（文字渲染准）；纯画面无文字时切 gemini
-default_ratio: "16:9"
+default_ratio: "4:3"
 one_liner: Blender 质感的半立体物体嵌进干净扁平场景，30 度等距俯视，把系统流程摆成一个可俯瞰的小世界。
 ---
 

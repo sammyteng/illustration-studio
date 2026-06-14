@@ -5,7 +5,7 @@ name_en: White Hand-drawn Cognitive Sketch
 channel: 公众号 / 方法论 / 知识库 正文配图
 has_text: true
 default_backend: gpt            # 有红橙蓝手写批注 → gpt-image-2 文字最稳
-default_ratio: "16:9"
+default_ratio: "4:3"
 one_liner: 纯白底 + 黑色手绘抖动线 + 少量红橙蓝手写批注，把观点/流程/结构变成一张白纸草图。
 ---
 
@@ -48,7 +48,7 @@ Keep the main subject 40-60% of the canvas, at least 35% blank white space, hand
 
 ## 示例提示词（主题：信任不是喊出来的，是一块块证据铺过去的）
 
-> 认知锚点：信任要一块块证据铺过去。隐喻：小人在断崖边用「案例/数据/口碑/复购」当砖，铺出一座通往「信任」门的上升桥。可直接喂 `render.js`（`--has-text true --aspect 16:9`）。
+> 认知锚点：信任要一块块证据铺过去。隐喻：小人在断崖边用「案例/数据/口碑/复购」当砖，铺出一座通往「信任」门的上升桥。可直接喂 `render.js`（`--has-text true --aspect 4:3`）。
 
 ```
 Generate one standalone 16:9 horizontal Chinese article illustration in a hand-drawn explanatory style.

@@ -5,7 +5,7 @@ name_en: Xiaohongshu Warm Marker
 channel: 小红书封面 + 正文配图 / 情绪共鸣内容
 has_text: true
 default_backend: gpt            # 封面大字标题 → gpt-image-2 文字最稳
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 暖奶油纸 + 马克笔/彩铅暖色盘，画打工人/创作者真实处境，「这不就是我」钩子。
 ---
 

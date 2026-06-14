@@ -1,17 +1,17 @@
 ---
 name: illustration-studio
-description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 套插画风格 + 双后端
+description: 读懂内容→挑风格→出可粘贴提示词/直接出图，27 套插画风格 + 双后端
 ---
 
 # Illustration Studio · 内容配图工作室
 
 > 一个**目标式配图 Agent**：给它一篇文章/一个主题，它先**读懂**，挑出最该配图的「认知锚点」，
-> 从 **26 套插画风格**里选最合适的一套，产出 shot list + 每张**可直接粘贴的生图提示词**，
+> 从 **27 套插画风格**里选最合适的一套，产出 shot list + 每张**可直接粘贴的生图提示词**，
 > 有出图 key 时直接渲染 PNG。
 
 > **核心理念**：好配图不是给文章配气氛图，也不是把文章画成流程图，而是
 > **把最关键的那个「认知动作 / 用户处境」挑出来，用一个画面让人 1 秒看懂**。
-> 通用方法论（提炼→构图→原创隐喻→质检）见 `references/engine.md`；26 套风格的「长相」见 `references/styles/`。
+> 通用方法论（提炼→构图→原创隐喻→质检）见 `references/engine.md`；27 套风格的「长相」见 `references/styles/`。
 
 ---
 
@@ -20,7 +20,7 @@ description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 
 用户给「内容 + 渠道/风格偏好」后，达到的**终态**：
 
 - 针对正文/链接/主题，产出 **N 张配图的 shot list**，每张锁定**单一认知锚点**。
-- 从 26 套风格里**选定 1 套**最契合内容与渠道的风格（或用户指定）。
+- 从 27 套风格里**选定 1 套**最契合内容与渠道的风格（或用户指定）。
 - 每张配**一条可直接粘贴的单图生图提示词**（英文画面主体 + 中文标注），含该风格 DNA 全部必含项。
 - **有 key**：用 `render.js` 直接渲染 PNG 并过图像级质检；**无 key**：交付提示词（状态 `DONE_WITHOUT_RENDER`）。
 
@@ -38,7 +38,7 @@ description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 
 ## 📥 输入
 
 - `content`（**必填**）：正文 / 链接 / Markdown / 主题。缺它 → `BLOCKED`。
-- `style`（可选，默认 `auto`）：从下方 26 套里指定 slug，或 `auto` 让 Agent 按内容+渠道选。
+- `style`（可选，默认 `auto`）：从下方 27 套里指定 slug，或 `auto` 让 Agent 按内容+渠道选。
 - `count`（可选，默认 4-8；短文 1-3，长文 ≤9）。
 - `ratio` / `backend`（可选）：覆盖该风格默认值。
 
@@ -70,44 +70,45 @@ description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 
 
 ---
 
-## 🎨 风格库（26 套 · 详见 `references/styles/<slug>.md`）
+## 🎨 风格库（27 套 · 详见 `references/styles/<slug>.md`）
 
 > 后端默认：**有字→gpt-image-2 / 无字→Gemini**（可覆盖）。示例样张见 `examples/`。
 
 | slug | 风格 | 渠道 | 有字 | 默认比例 |
 |---|---|---|---|---|
-| `keke-sketch` | 白底手绘认知图 | 公众号/方法论 | ✅ | 16:9 |
-| `saas-tech` | 扁平 SaaS 科技风 | B2B/产品/deck | ✅ | 16:9 |
-| `xhs-warm` | 小红书暖系马克笔 | 小红书共鸣 | ✅ | 3:4 |
-| `editorial-line` | 极简单线条编辑风 | 深度长文 | ⬜ | 16:9 |
-| `hybrid-3d-flat-isometric` | 3D 融合扁平等距 | B2B 系统架构 | ✅ | 16:9 |
-| `claymorphism-soft-3d` | 黏土软 3D | 吉祥物/引导页 | ⬜ | 1:1 |
-| `grainy-gradient-noise` | 颗粒噪点渐变 | 情绪头图 | ⬜ | 16:9 |
-| `painterly-watercolor-gouache` | 新传统水彩水粉 | 情绪叙事/长文 | ⬜ | 3:2 |
-| `mixed-media-collage` | 混合媒介拼贴 | campaign 主视觉 | ✅ | 4:5 |
-| `risograph-retro-print` | Riso 孔版印刷 | 态度海报/文创 | ✅ | 3:4 |
+| `keke-sketch` | 白底手绘认知图 | 公众号/方法论 | ✅ | 4:3 |
+| `saas-tech` | 扁平 SaaS 科技风 | B2B/产品/deck | ✅ | 4:3 |
+| `xhs-warm` | 小红书暖系马克笔 | 小红书共鸣 | ✅ | 4:3 |
+| `editorial-line` | 极简单线条编辑风 | 深度长文 | ⬜ | 4:3 |
+| `hybrid-3d-flat-isometric` | 3D 融合扁平等距 | B2B 系统架构 | ✅ | 4:3 |
+| `claymorphism-soft-3d` | 黏土软 3D | 吉祥物/引导页 | ⬜ | 4:3 |
+| `grainy-gradient-noise` | 颗粒噪点渐变 | 情绪头图 | ⬜ | 4:3 |
+| `painterly-watercolor-gouache` | 新传统水彩水粉 | 情绪叙事/长文 | ⬜ | 4:3 |
+| `mixed-media-collage` | 混合媒介拼贴 | campaign 主视觉 | ✅ | 4:3 |
+| `risograph-retro-print` | Riso 孔版印刷 | 态度海报/文创 | ✅ | 4:3 |
 | `papercut-papercraft` | 剪纸纸艺 | 品牌故事/温暖叙事 | ⬜ | 4:3 |
 | `pixel-8bit-retro` | 像素 8-bit 复古 | 游戏化叙事 | ✅ | 4:3 |
-| `cosmic-retro-futurism` | 复古未来太空图录 | 未来宣言页 | ⬜ | 16:9 |
-| `y2k-cyber-chrome` | Y2K 千禧赛博 | 潮牌/Gen Z 封面 | ✅ | 3:4 |
-| `ghibli-healing-anime` | 吉卜力治愈动漫 | 情感营销/品牌故事 | ⬜ | 16:9 |
-| `bauhaus-geometric` | 包豪斯几何构成 | 知识框架/信息图 | ⬜ | 1:1 |
-| `oriental-ink-guofeng` | 东方水墨国风 | 出海文化身份 | ⬜ | 3:4 |
-| `moodboard-scrapbook` | 数字剪贴簿 moodboard | 选品灵感板/生活方式 | ⬜ | 3:4 |
-| `premium-product-hero` | 高端产品 hero | 产品发布/DTC 广告 | ✅ | 3:4 |
-| `bold-type-over-photo` | 大字压图广告 | campaign KV/海报 | ✅ | 3:4 |
-| `friendly-brand-cards` | 友好品牌卡片流 | 能力清单/功能营销图 | ✅ | 3:4 |
-| `bold-line-retro-flat` | 粗线条复古平涂 | 潮流趣味插画/封面 | ⬜ | 2:3 |
-| `airy-lifestyle-linedraw` | 留白生活速写 | 生活方式封面/charm 插画 | ✅ | 3:4 |
-| `loose-red-accent-sketch` | 单红点手绘速写 | 极简趣味海报/框画 | ✅ | 3:4 |
-| `minimal-lookbook-grid` | 极简 lookbook 网格 | 选品合集/电商目录 | ✅ | 3:4 |
-| `mascot-quote-ad` | 萌宠金句广告 | DTC 趣味广告/萌宠代言 | ✅ | 3:4 |
+| `cosmic-retro-futurism` | 复古未来太空图录 | 未来宣言页 | ⬜ | 4:3 |
+| `y2k-cyber-chrome` | Y2K 千禧赛博 | 潮牌/Gen Z 封面 | ✅ | 4:3 |
+| `ghibli-healing-anime` | 吉卜力治愈动漫 | 情感营销/品牌故事 | ⬜ | 4:3 |
+| `bauhaus-geometric` | 包豪斯几何构成 | 知识框架/信息图 | ⬜ | 4:3 |
+| `oriental-ink-guofeng` | 东方水墨国风 | 出海文化身份 | ⬜ | 4:3 |
+| `moodboard-scrapbook` | 数字剪贴簿 moodboard | 选品灵感板/生活方式 | ⬜ | 4:3 |
+| `premium-product-hero` | 高端产品 hero | 产品发布/DTC 广告 | ✅ | 4:3 |
+| `bold-type-over-photo` | 大字压图广告 | campaign KV/海报 | ✅ | 4:3 |
+| `friendly-brand-cards` | 友好品牌卡片流 | 能力清单/功能营销图 | ✅ | 4:3 |
+| `bold-line-retro-flat` | 粗线条复古平涂 | 潮流趣味插画/封面 | ⬜ | 4:3 |
+| `airy-lifestyle-linedraw` | 留白生活速写 | 生活方式封面/charm 插画 | ✅ | 4:3 |
+| `loose-red-accent-sketch` | 单红点手绘速写 | 极简趣味海报/框画 | ✅ | 4:3 |
+| `minimal-lookbook-grid` | 极简 lookbook 网格 | 选品合集/电商目录 | ✅ | 4:3 |
+| `mascot-quote-ad` | 萌宠金句广告 | DTC 趣味广告/萌宠代言 | ✅ | 4:3 |
+| `flat-brand-mascot` | 扁平品牌吉祥物 | 品牌主视觉/IP/封面插画 | ✅ | 4:3 |
 
 ## 快速开始
 
 ```bash
 # 1. 读懂内容、挑风格、出提示词（Agent 完成）
 # 2. 渲染（先 npm install openai @google/genai + 配出图 key）：
-node render.js --has-text true  --aspect 16:9 --out /tmp/out --prompt-file <提示词文件>   # 有字 → gpt-image-2
-node render.js --has-text false --aspect 16:9 --out /tmp/out --prompt-file <提示词文件>   # 无字 → Gemini
+node render.js --has-text true  --aspect 4:3 --out /tmp/out --prompt-file <提示词文件>   # 有字 → gpt-image-2
+node render.js --has-text false --aspect 4:3 --out /tmp/out --prompt-file <提示词文件>   # 无字 → Gemini
 ```

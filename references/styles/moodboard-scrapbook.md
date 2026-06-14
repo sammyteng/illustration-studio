@@ -5,7 +5,7 @@ name_en: Digital Scrapbook / Moodboard Collage
 channel: 小红书种草拼贴 / 跨境选品灵感板 / 出海生活方式 moodboard / 品牌情绪板
 has_text: false            # 默认无叠加标题 → gemini（nano banana pro，照片抠图质感/投影更真）；物件自带的小字（机票 BOARDING PASS 等）是照片本身一部分，不算叠加文字
 default_backend: nano
-default_ratio: "3:4"
+default_ratio: "4:3"
 one_liner: 暖牛皮纸方格底上一组真实照片抠图叠贴，每张带柔投影、微倾斜、自然重叠，像手贴的向往感生活方式剪贴簿。
 ---
 
@@ -134,7 +134,7 @@ room, riso halftone, white-paper sketch, SaaS blue UI, single-line editorial.
 
 > 认知锚点：**把这个夏天要卖爆的几样东西，连同它们撑起的那种度假生活方式，一起摊在牛皮纸上——不是产品图，是「这就是我想过的夏天」，一眼就想下单。**
 > 隐喻：一页手贴剪贴簿——一张海边宝丽来定调氛围，墨镜 / 机票 / 鸡尾酒 / 果碗 / 防晒霜几样真实抠图错落叠贴，每件软投影翘起、微倾、压着角，机票那一抹蓝点出「出海」。
-> 纯画面无叠加文字，机票自带 `BOARDING PASS` 是照片本身。可直接喂 `render.js`（`--backend nano --aspect 3:4`）。
+> 纯画面无叠加文字，机票自带 `BOARDING PASS` 是照片本身。可直接喂 `render.js`（`--backend nano --aspect 4:3`）。
 
 ```
 A digital scrapbook / moodboard collage page, 3:4 aspect ratio, on a warm kraft /
