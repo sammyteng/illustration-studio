@@ -21,8 +21,6 @@
 
 风格只是「皮肤」，引擎是「大脑」——19 套风格共用同一套认知配图方法论。
 
-灵感与方法论致敬 [helloianneo/ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)（详见 `NOTICE.md`）。
-
 ---
 
 ## 19 套风格
@@ -35,7 +33,19 @@
 | 复古印刷 | Riso 孔版印刷 · 像素 8-bit 复古 · 复古未来太空图录 · Y2K 千禧赛博 |
 | 质感 / 拼贴 | 小红书暖系马克笔 · 混合媒介拼贴 · 剪纸纸艺 · 颗粒噪点渐变 |
 
-每套风格的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 完整示例，见 [`references/styles/`](references/styles)。样张见 [`examples/`](examples)。
+每套风格的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 完整示例，见 [`references/styles/`](references/styles)。
+
+## 样张 Gallery
+
+> 19 套风格各一张样张（由 `gpt-image-2` / Gemini Nano Banana Pro 生成，主题取自跨境电商 / AI 客服 / 内容创作场景，仅作风格演示）。
+
+|  |  |  |  |
+|:--:|:--:|:--:|:--:|
+| <img src="examples/keke-sketch.png" width="200"><br>**白底手绘**<br><sub>`keke-sketch`</sub> | <img src="examples/saas-tech.png" width="200"><br>**SaaS 科技**<br><sub>`saas-tech`</sub> | <img src="examples/xhs-warm.png" width="200"><br>**小红书暖系**<br><sub>`xhs-warm`</sub> | <img src="examples/editorial-line.png" width="200"><br>**极简单线条**<br><sub>`editorial-line`</sub> |
+| <img src="examples/hybrid-3d-flat-isometric.png" width="200"><br>**3D 融合等距**<br><sub>`hybrid-3d-flat-isometric`</sub> | <img src="examples/claymorphism-soft-3d.png" width="200"><br>**黏土软 3D**<br><sub>`claymorphism-soft-3d`</sub> | <img src="examples/grainy-gradient-noise.png" width="200"><br>**颗粒噪点渐变**<br><sub>`grainy-gradient-noise`</sub> | <img src="examples/painterly-watercolor-gouache.png" width="200"><br>**新传统水彩**<br><sub>`painterly-watercolor-gouache`</sub> |
+| <img src="examples/mixed-media-collage.png" width="200"><br>**混合媒介拼贴**<br><sub>`mixed-media-collage`</sub> | <img src="examples/risograph-retro-print.png" width="200"><br>**Riso 孔版印刷**<br><sub>`risograph-retro-print`</sub> | <img src="examples/papercut-papercraft.png" width="200"><br>**剪纸纸艺**<br><sub>`papercut-papercraft`</sub> | <img src="examples/low-poly-crystal.png" width="200"><br>**低多边形水晶**<br><sub>`low-poly-crystal`</sub> |
+| <img src="examples/pixel-8bit-retro.png" width="200"><br>**像素 8-bit**<br><sub>`pixel-8bit-retro`</sub> | <img src="examples/cosmic-retro-futurism.png" width="200"><br>**复古太空图录**<br><sub>`cosmic-retro-futurism`</sub> | <img src="examples/y2k-cyber-chrome.png" width="200"><br>**Y2K 千禧赛博**<br><sub>`y2k-cyber-chrome`</sub> | <img src="examples/ghibli-healing-anime.png" width="200"><br>**吉卜力治愈**<br><sub>`ghibli-healing-anime`</sub> |
+| <img src="examples/sticker-diecut.png" width="200"><br>**贴纸模切**<br><sub>`sticker-diecut`</sub> | <img src="examples/bauhaus-geometric.png" width="200"><br>**包豪斯几何**<br><sub>`bauhaus-geometric`</sub> | <img src="examples/oriental-ink-guofeng.png" width="200"><br>**东方水墨国风**<br><sub>`oriental-ink-guofeng`</sub> |  |
 
 ---
 
@@ -90,4 +100,4 @@ illustration-studio/
 
 ## License
 
-MIT · 详见 `LICENSE` 与 `NOTICE.md`（方法论致敬来源）。
+MIT · 详见 `LICENSE`。

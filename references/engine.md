@@ -1,14 +1,10 @@
 # 内容配图引擎（共用方法论）
 
-> 这是「认知配图」家族 4 套 skill 的共用大脑。任何一套配图 skill 在执行时都先读这份引擎，
-> 再读自己 `references/style-dna.md` 里的「长相」。
+> 这是 19 套配图风格的共用大脑。任何一套风格在执行时都先读这份引擎，
+> 再读自己 `references/styles/<slug>.md` 里的「长相」。
 >
 > **一句话哲学**：好配图不是给文章配气氛图，也不是把文章画成流程图，而是
-> **把文章里最关键的那个「认知动作 / 用户处境」挑出来，用一个物理画面让人 1 秒看懂**。
->
-> 灵感来源：[helloianneo/ian-xiaohei-illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
-> 与 [ian-xiaohei-scenes](https://github.com/helloianneo/ian-xiaohei-scenes) 的认知配图方法论，
-> 本引擎在其基础上做了「去固定吉祥物 + 多风格皮肤 + 中文渠道适配 + 本机渲染兜底」的改造。
+> **把文章里最关键的那个「认知动作 / 用户处境」挑出来，用一个画面让人 1 秒看懂**。
 
 ---
 
