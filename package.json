@@ -1,0 +1,16 @@
+{
+  "name": "illustration-studio",
+  "version": "1.0.0",
+  "description": "内容配图工作室 — 自包含双后端渲染器（gpt-image-2 + Gemini Nano Banana）",
+  "license": "MIT",
+  "bin": {
+    "illustration-render": "render.js"
+  },
+  "scripts": {
+    "render": "node render.js"
+  },
+  "dependencies": {
+    "openai": "^6.35.0",
+    "@google/genai": "^1.51.0"
+  }
+}

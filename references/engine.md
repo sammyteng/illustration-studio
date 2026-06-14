@@ -119,29 +119,28 @@
 
 ---
 
-## 6. 生图 → 渲染路径（本机已配双后端 · 2026-06-14 验证可用）
+## 6. 生图 → 渲染路径
 
-各 skill 的 `references/prompt-template.md` 负责把 shot 拼成一条**单图生图提示词**（一次一张，不要把多张拼一张）。
-**本机已配两个出图后端，默认直接渲染 PNG**（早前"无 key"是误判：key 都在 `~/.zshrc`/Keychain）。
+把 shot 拼成一条**单图生图提示词**（一次一张，不要把多张拼一张）。
+配好至少一个出图 key 即可直接渲染 PNG；无 key 时只产出「可粘贴提示词」。
 
-**最省事：直接调用本目录的渲染器** `_illustration-engine/render.js`：
+**最省事：调用本仓库自包含的渲染器** `render.js`（先 `npm install openai @google/genai`）：
 
 ```bash
-node "<this-skill>/render.js" \
-  --backend both --aspect 16:9 --out /tmp/illus \
+node render.js --backend both --aspect 16:9 --out /tmp/illus \
   --prompt "<英文画面主体 + 中文标注词>"
 # --backend gpt|nano|both ; --aspect 16:9|3:4|1:1 ; --prompt-file <path> 亦可
 ```
 
-两个后端的底层凭证映射（render.js 已内置，手动调时照此）：
+两个后端的凭证（render.js 已内置，手动调时照此）：
 
 | 后端 | 模型 | 凭证 / 关键点 |
 |---|---|---|
-| **A · flatkey** | `gpt-image-2` | `OPENAI_BASE_URL=https://router.flatkey.ai/v1` + `OPENAI_API_KEY=$FLATKEY_API_KEY`（Keychain 注入）。走 image-master `gpt`。size：16:9→1536x1024 / 3:4→1024x1536 |
-| **B · Gemini** | Nano Banana Pro | ⚠️ image-master `nano.js` 读 `GOOGLE_AI_API_KEY`（本机此变量为空），调用前必须 `export GOOGLE_AI_API_KEY=$GEMINI_API_KEY`。model `pro`=gemini-3-pro-image-preview，失败降级 `flash` |
+| **A · gpt-image-2** | OpenAI 兼容 | `OPENAI_API_KEY`（用官方 OpenAI；自有兼容路由再设 `OPENAI_BASE_URL`）。`render.js --backend gpt`。size：16:9→1536x1024 / 3:4→1024x1536 |
+| **B · Gemini** | Nano Banana Pro | `GEMINI_API_KEY`（或 `GOOGLE_API_KEY`）。`render.js --backend nano`，model `pro`=gemini-3-pro-image-preview，失败降级 `flash` |
 
-**默认后端选择规则（477 定，2026-06-14）**：
-- **图上有文字标注 → 用 A · flatkey gpt-image-2**（中文/英文文字渲染最准，几乎不乱码）。
+**默认后端选择规则**：
+- **图上有文字标注 → 用 A · gpt-image-2**（中文/英文文字渲染最准，几乎不乱码）。
 - **纯画面、无文字 → 用 B · Gemini Nano Banana Pro**（线条/质感更精细、成品感更强）。
 - `render.js` 已支持 `--has-text true|false` 按此自动选后端；显式 `--backend` 优先。
 
@@ -205,11 +204,6 @@ node "<this-skill>/render.js" \
 
 ---
 
-## 附：4 套皮肤一览（各自 DNA 见对应 skill 的 `references/style-dna.md`）
+## 附：风格库
 
-| Skill | 风格 | 渠道 | 有无角色 | 默认比例 |
-|---|---|---|---|---|
-| `keke-sketch-illustrations` | 白底手绘 · 红橙蓝批注 | 公众号 / 方法论 / 知识库 | 无固定主角 | 16:9 |
-| `saas-tech-illustrations` | 跨境 SaaS 科技风 · 蓝+亮 accent | Shulex 产品 / 销售 deck / B2B | 无主角 | 16:9 / 4:3 |
-| `xhs-warm-illustrations` | 小红书暖系 · 纸感马克笔 | 小红书封面 + 正文 | 无固定主角 | 3:4（封面）|
-| `editorial-line-illustrations` | 极简单线 · 单点缀色 | 深度长文 / 虎嗅晚点风 | 无主角 | 16:9 / 3:2 |
+全部 26 套风格的速查表见 `SKILL.md`；每套的视觉 DNA / 配色 / 禁忌 / 提示词模板 / 示例见 `references/styles/<slug>.md`，样张见 `examples/`。

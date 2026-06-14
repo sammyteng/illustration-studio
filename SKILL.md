@@ -57,8 +57,8 @@ description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 
 ## ⚙️ 副作用
 
 - **写入**：shot list/提示词在对话返回；图落 `examples/` 或 `/tmp` 或用户工作区 `assets/<slug>/`，递增命名不覆盖。
-- **调用 API**：仅当检测到 key 时，经 `render.js` → image-master 调 flatkey `gpt-image-2` / Gemini `nano`。
-- **凭证**：一律从环境变量 / Keychain 读，**绝不写进任何文件 / 提示词**（`FLATKEY_API_KEY` / `GEMINI_API_KEY` / `IMAGE_MASTER_SRC`）。
+- **调用 API**：仅当检测到 key 时，经自包含的 `render.js` 调 `gpt-image-2`（OpenAI 兼容）/ Gemini Nano Banana。`render.js` 只依赖公开 npm 包 `openai` + `@google/genai`。
+- **凭证**：一律从环境变量读，**绝不写进任何文件 / 提示词**（`OPENAI_API_KEY` /（可选 `OPENAI_BASE_URL`）/ `GEMINI_API_KEY`）。
 - **破坏性**：否。
 
 ## 🚨 失败回执
@@ -107,7 +107,7 @@ description: 读懂内容→挑风格→出可粘贴提示词/直接出图，26 
 
 ```bash
 # 1. 读懂内容、挑风格、出提示词（Agent 完成）
-# 2. 渲染（需 image-master + 出图 key）：
+# 2. 渲染（先 npm install openai @google/genai + 配出图 key）：
 node render.js --has-text true  --aspect 16:9 --out /tmp/out --prompt-file <提示词文件>   # 有字 → gpt-image-2
 node render.js --has-text false --aspect 16:9 --out /tmp/out --prompt-file <提示词文件>   # 无字 → Gemini
 ```

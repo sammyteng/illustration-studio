@@ -4,7 +4,7 @@
 >
 > 适配 Claude Code / Codex / 任何能读 `SKILL.md` 的 Agent 运行时。
 
-中文 article illustration generator. Understands your article first, finds the key cognitive anchor, picks one of **19 illustration styles**, and emits ready-to-paste image-generation prompts (auto-renders PNG when an image key is available).
+中文 article illustration generator. Understands your article first, finds the key cognitive anchor, picks one of **26 illustration styles**, and emits ready-to-paste image-generation prompts (auto-renders PNG when an image key is available).
 
 ---
 
@@ -56,7 +56,7 @@
 
 | 后端 | 模型 | 何时用 |
 |---|---|---|
-| **A** flatkey | `gpt-image-2` | **图上有文字标注** → 文字渲染最准、几乎不乱码 |
+| **A** OpenAI | `gpt-image-2` | **图上有文字标注** → 文字渲染最准、几乎不乱码 |
 | **B** Gemini | Nano Banana Pro | **纯画面、无文字** → 线条/质感更精细、成品感更强 |
 
 `render.js` 用 `--has-text true|false` 自动按此规则选后端；显式 `--backend gpt|nano|both` 优先。
@@ -65,17 +65,22 @@
 
 ## 安装 & 用法
 
-**依赖**：[image-master](https://github.com/) CLI（封装 OpenAI / Google 图像 API）+ 至少一个出图 key。
+**`render.js` 是自包含的**，只依赖两个公开 npm 包，外加至少一个出图 key：
 
 ```bash
-# 凭证（从环境变量 / Keychain 读，绝不写进仓库）
-export FLATKEY_API_KEY=...        # flatkey gpt-image-2（OpenAI 兼容路由）
-export GEMINI_API_KEY=...         # Gemini Nano Banana
-export IMAGE_MASTER_SRC=/path/to/image-master/src   # 非默认安装路径时指定
+# 1. 装依赖（在本仓库目录执行一次）
+npm install openai @google/genai
 
-# 渲染一张
-node render.js --has-text true --aspect 16:9 --out /tmp/out --prompt-file ./prompt.txt
+# 2. 凭证（从环境变量读，绝不写进仓库）—— 任选一个或都配
+export OPENAI_API_KEY=...     # gpt-image-2（用官方 OpenAI；若用自有兼容路由，再设 OPENAI_BASE_URL）
+export GEMINI_API_KEY=...     # Gemini Nano Banana
+
+# 3. 渲染一张
+node render.js --has-text true  --aspect 16:9 --out /tmp/out --prompt-file ./prompt.txt   # 有字 → gpt-image-2
+node render.js --has-text false --aspect 16:9 --out /tmp/out --prompt-file ./prompt.txt   # 无字 → Gemini
 ```
+
+> 注：`gpt-image-2` 是 OpenAI 兼容接口；自带 OpenAI 兼容路由的用户设 `OPENAI_BASE_URL` 即可。无 key 时本 skill 仍可只产出**可粘贴提示词**（贴到 ChatGPT / Gemini / 即梦 出图）。
 
 **在 Agent 里用**：把 `SKILL.md` 装进你的运行时，然后：
 

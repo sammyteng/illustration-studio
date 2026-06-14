@@ -5,7 +5,7 @@ name_en: Collage / Mixed Media
 one_liner: 实拍照片+手绘+剪报+材质硬拼在一起，层层叠叠刻意留剪裁毛边，触感强、有惊喜。
 channel: 大促 campaign 主视觉 / 概念头图 / 杂志风专题封面 / 增长复盘头图 / scrapbook 风栏目
 has_text: true
-default_backend: gpt          # 有字 → flatkey gpt-image-2（中文标注不乱码）；纯画面无字才退 gemini
+default_backend: gpt          # 有字 → gpt-image-2（中文标注不乱码）；纯画面无字才退 gemini
 default_ratio: "4:5"
 ---
 
@@ -196,5 +196,5 @@ material only, everything aligned too neatly (PPT look), muddy oversaturated col
 image, unauthorized real faces / brand logos.
 ```
 
-（标注 5 个踩满上限；单一强调色荧光橙只钉"最后一块拼图"+ 增长箭头；做旧暖底 + 红/蓝/金三撞色 + 照片碎片保留原色；比例 4:5——有字默认走 flatkey gpt-image-2。可直接喂给 `render.js`：
+（标注 5 个踩满上限；单一强调色荧光橙只钉"最后一块拼图"+ 增长箭头；做旧暖底 + 红/蓝/金三撞色 + 照片碎片保留原色；比例 4:5——有字默认走 gpt-image-2。可直接喂给 `render.js`：
 `node "$HOME/shared-skills/_illustration-engine/render.js" --has-text true --aspect 3:4 --out /tmp/illus --prompt "<上面整段>"`，4:5 取最接近的竖版 3:4。）
