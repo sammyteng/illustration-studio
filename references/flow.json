@@ -1,0 +1,51 @@
+{
+  "skill": "illustration-studio",
+  "title": "文章一键配图生成流程",
+  "nodes": [
+    {
+      "title": "给内容",
+      "subtitle": "正文/链接/主题+风格偏好",
+      "type": "io"
+    },
+    {
+      "title": "提认知锚点",
+      "subtitle": "读懂内容挑出最该配图的点",
+      "type": "code"
+    },
+    {
+      "title": "选风格",
+      "subtitle": "从33套插画风格库挑1套",
+      "type": "reuse"
+    },
+    {
+      "title": "出shot list",
+      "subtitle": "每张锁定单一锚点定构图",
+      "type": "code"
+    },
+    {
+      "title": "写提示词",
+      "subtitle": "套风格模板生成单图提示词",
+      "type": "code"
+    },
+    {
+      "title": "提示词自检",
+      "subtitle": "过禁忌+留白闸不过回去改",
+      "type": "gate"
+    },
+    {
+      "title": "渲染出图",
+      "subtitle": "有key调双后端渲染PNG",
+      "type": "reuse"
+    },
+    {
+      "title": "图像质检",
+      "subtitle": "3秒读懂无PPT味否则重渲",
+      "type": "gate"
+    },
+    {
+      "title": "交付配图",
+      "subtitle": "PNG+提示词+用途位置",
+      "type": "io"
+    }
+  ]
+}

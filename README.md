@@ -6,6 +6,12 @@
 
 中文 article illustration generator. Understands your article first, finds the key cognitive anchor, picks one of **33 illustration styles**, and emits ready-to-paste image-generation prompts (auto-renders PNG when an image key is available).
 
+## 🗺️ 一图看懂流程
+
+![文章一键配图生成流程](references/flow.svg)
+
+> 🟪 新写代码 · 🟩 复用现成 · 🟧 省钱闸门 · ⬜ 输入/输出
+
 ---
 
 ## 核心理念
